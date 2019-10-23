@@ -1,0 +1,298 @@
+.videoUno {
+    display: flex;
+  justify-content: center;
+   transform: translateX(-0%) rotate(-45deg);
+
+            width: 225px;
+
+            height: 225px;
+
+            border: 3px solid black;
+
+            position: absolute;
+  top: 30%;
+  left:  150px;
+
+      
+}
+
+.videoDos {
+
+  display: flex;
+  justify-content: center;
+   transform: translateX(-0%) rotate(-45deg);
+
+            width: 225px;
+
+            height: 225px;
+
+            border: 3px solid black;
+
+            position: absolute;
+  top: 30%;
+  right:  573px;
+
+} 
+
+.videoTres {
+  display: flex;
+  justify-content: center;
+   transform: translateX(-0%) rotate(-45deg);
+
+            width: 225px;
+
+            height: 225px;
+
+            border: 3px solid black;
+
+            position: absolute;
+  top: 30%;
+  right:  178px;
+
+}
+
+.videoCuatro {
+  display: flex;
+  flex-direction: column;
+   transform: translateX(-0%) rotate(-45deg);
+
+            width: 300px;
+
+            height: 300px;
+
+            border: 3px solid black;
+
+            position: absolute;
+  top: 50%;
+  left:  312px;
+
+}
+.videoCinco {
+display: flex;
+  flex-direction: column;
+   transform: translateX(-0%) rotate(-45deg);
+
+            width: 300px;
+
+            height: 300px;
+
+            border: 3px solid black;
+
+            position: absolute;
+  top: 50%;
+  right: 338px;
+
+}
+
+.videoSeis {
+  display: flex;
+  justify-content: center;
+   transform: translateX(-0%) rotate(-45deg);
+
+            width: 225px;
+
+            height: 225px;
+
+            border: 3px solid black;
+
+            position: absolute;
+  top: 84%;
+  left:  150px;
+
+}
+ .videoSiete {
+  display: flex;
+  justify-content: center;
+   transform: translateX(-0%) rotate(-45deg);
+
+            width: 225px;
+
+            height: 225px;
+
+            border: 3px solid black;
+
+            position: absolute;
+  top: 84%;
+  right:  573px;
+
+ }
+
+ .videoOcho {
+
+  display: flex;
+  justify-content: center;
+   transform: translateX(-0%) rotate(-45deg);
+
+            width: 225px;
+
+            height: 225px;
+
+            border: 3px solid black;
+
+            position: absolute;
+  top: 84%;
+  right:  178px;
+ } 
+
+.btnIs {
+  
+   width: 180px;
+   height: 60px; 
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+    background-color: navy;
+    border-radius: 50px;
+    border: 1px solid navy;
+    position: absolute;
+    top: 800px;
+    right: 16px;
+    
+
+
+ } 
+
+ .btnIs:hover {
+   color: black;
+    background-color: #ffffff;
+ }
+
+ 
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 10px;
+}
+footer {
+  background-color: #dee2e6;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60%;
+  color: black;
+  top: 1000px;
+  
+}
+.footer-text a{
+  color:  #7e7e7e;
+  text-decoration: none;
+
+
+}
+.redes{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 80px;
+
+
+}
+.redes li {
+  margin-right: 7px;
+
+}
+body {
+  background: #456;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+/* Reset top and bottom margins from certain elements */
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* The triangle form is achieved by a CSS hack */
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: #003459;;
+}
+
+.login-header {
+  background: #003459;;
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+/* Every row inside .login-container is defined with p tags */
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+/* Text fields' focus effect */
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: #003459;;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+/* Buttons' focus effect */
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+
+@media (max-width: 480px) {
+    .login {    
+           width: 150px;
+    margin: -28px auto;
+    font-size: 10px;
+    position: absolute;
+    right: 38%;
+    top: 20%
+
+}
+}
