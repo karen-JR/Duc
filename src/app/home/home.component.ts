@@ -10,6 +10,8 @@ export class homeComponent{
 	public titulo = 'home';
 	public parametro;
 	 public route;
+
+	 
 	
 
 	constructor(
