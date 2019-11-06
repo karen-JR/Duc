@@ -1,6 +1,5 @@
 import { Component, OnInit }   from '@angular/core';
-import { Router }              from '@angular/router';
-
+import { Router, ActivatedRoute, Params} from '@angular/router';
 import { FormDataService }     from '../data/formData.service';
 
 @Component ({
@@ -13,8 +12,9 @@ export class WorkComponent implements OnInit {
     workType: string;
     form: any;
     
-    constructor(private router: Router, private formDataService: FormDataService) {
-    }
+    constructor(private route:ActivatedRoute,
+        private router: Router,
+        private formDataService: FormDataService) { }
 
     ngOnInit() {
         this.workType = this.formDataService.getWork();

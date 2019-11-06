@@ -18,6 +18,7 @@ import { WorkComponent }      from './work/work.component';
 import { AddressComponent }   from './address/address.component';
 import { ResultComponent }    from './result/result.component';
  import { FormDataService }    from './data/formData.service';
+ import { WorkflowService }    from './workflow/workflow.service';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ResultComponent }    from './result/result.component';
     routing,
     FormsModule,
   ],
-  providers: [appRoutingProviders],
+  providers: [appRoutingProviders, { provide: FormDataService, useClass: FormDataService },
+                   { provide: WorkflowService, useClass: WorkflowService }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

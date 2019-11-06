@@ -1,5 +1,5 @@
 import { Component, OnInit }   from '@angular/core';
-import { Router }              from '@angular/router';
+import { Router, ActivatedRoute, Params} from '@angular/router';
 
 import { Personal }            from '../data/formData.model';
 import { FormDataService }     from '../data/formData.service';
@@ -14,8 +14,10 @@ export class PersonalComponent implements OnInit {
     personal: Personal;
     form: any;
     
-    constructor(private router: Router, private formDataService: FormDataService) {
-    }
+    
+    constructor(private route:ActivatedRoute,
+        private router: Router,
+        private formDataService: FormDataService) { }
 
     ngOnInit() {
         this.personal = this.formDataService.getPersonal();
@@ -30,6 +32,7 @@ export class PersonalComponent implements OnInit {
         this.formDataService.setPersonal(this.personal);
         return true;
     }
+
 
     goToNext(form: any) {
         if (this.save(form)) {

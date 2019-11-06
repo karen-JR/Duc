@@ -1,5 +1,5 @@
 import { Component, OnInit }   from '@angular/core';
-import { Router }              from '@angular/router';
+import { Router, ActivatedRoute, Params} from '@angular/router';
 
 import { Address }             from '../data/formData.model';
 import { FormDataService }     from '../data/formData.service';
@@ -14,8 +14,9 @@ export class AddressComponent implements OnInit {
     address: Address;
     form: any;
     
-    constructor(private router: Router, private formDataService: FormDataService) {
-    }
+    constructor(private route:ActivatedRoute,
+        private router: Router,
+        private formDataService: FormDataService) { }
 
     ngOnInit() {
         this.address = this.formDataService.getAddress();

@@ -21,9 +21,9 @@ export class multimediaComponent{
 	// MDB Lightbox Init
 
 function previewFile() {
-  let preview = document.querySelector('img');
-  let file    = (<HTMLInputElement>document.getElementById('uploadBR')).files[0];
-  var reader  = new FileReader();
+  let preview =  document.querySelector('img');
+  let file    =  (<HTMLInputElement>document.getElementById('uploadBR')).files[0];
+  var reader  =  new FileReader();
 
   reader.onloadend = function () {
     
