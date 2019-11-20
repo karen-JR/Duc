@@ -1,6 +1,16 @@
+import { Component, OnInit } from '@angular/core';
+
+import { HttpClientModule } from '@angular/common/http';
+import {LoginService} from './services/login.service';
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { UserService } from './user/user.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule }        from '@angular/forms';
+import { FormsModule }   from '@angular/forms';
+
 
 import { routing, appRoutingProviders }   from './app.routing';
 
@@ -11,15 +21,30 @@ import { registroComponent } from './registro/registro.component';
 import { multimediaComponent } from './multimedia/multimedia.component';
 import { pinComponent } from './pin/pin.component';
 import { NavbarComponent }    from './navbar/navbar.component';
+import { TareasComponent }    from './Tareas/tareas.component';
+import { dashboardComponent }    from './dashboard/dashboard.component';
+
+
+
+
+
+
+//servicios 
+import { MultService } from './multimediaD/mult.service';
+
+ import  { DataApiService } from './services/data-api.service';
+ import  { UsuarioService } from './services/usuario.service';
+import { MultimediaDModule } from './multimediaD/multimedia-d.module';
+ import  { MessageService } from './message.service';
+
+
+
+
+
+ 
+
  
 /* Feature Components */
-import { PersonalComponent }  from './personal/personal.component';
-import { WorkComponent }      from './work/work.component';
-import { AddressComponent }   from './address/address.component';
-import { ResultComponent }    from './result/result.component';
- import { FormDataService }    from './data/formData.service';
- import { WorkflowService }    from './workflow/workflow.service';
-
 
 @NgModule({
   declarations: [
@@ -30,20 +55,28 @@ import { ResultComponent }    from './result/result.component';
     multimediaComponent,
     pinComponent,
     NavbarComponent, 
-    PersonalComponent, 
-    WorkComponent, 
-    AddressComponent, 
-    ResultComponent 
+     TareasComponent,
+     dashboardComponent,
+
+    
+     
+     
+   
     
     
   ],
   imports: [
     BrowserModule,
     routing,
-    FormsModule,
+     FormsModule,
+    HttpClientModule,
+    MultimediaDModule,
+     BrowserAnimationsModule,
+   
   ],
-  providers: [appRoutingProviders, { provide: FormDataService, useClass: FormDataService },
-                   { provide: WorkflowService, useClass: WorkflowService }],
+  providers: [appRoutingProviders, LoginService,UserService, DataApiService, MultService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

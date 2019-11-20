@@ -1,7 +1,8 @@
 <div class="limiter">
   <div class="container-login100" style="background-image: url('assets/img/apa.jpg');">
     <div class="wrap-login100">
-      <form class="login100-form validate-form">
+      <form method="POST"  action='https://localhost:5000/api/login' class="login100-form validate-form" #formLogin="ngForm" (ngSubmit)="onSubmit(); formLogin.reset(); ">
+
         <span class="login100-form-logo">
           <img src="/assets/img/loginDUC.png" style="width: 115px; " alt="dasdd">
         </span>
@@ -10,14 +11,21 @@
           Iniciar Sesion
         </span>
 
-        <div class="wrap-input100 validate-input" data-validate = "Enter username">
-          <input class="input100" type="text" name="username" placeholder="Usuario">
+        <div class="wrap-input100 validate-input" data-validate = "Enter username"  >
+          
+          <input class="input100" type="text" name="username" #username="ngModel" [(ngModel)]="Login.username" required
+          placeholder="Usuario" >
           <span class="focus-input100" data-placeholder="&#xf207;"></span>
+          <span *ngIf="username.touched && !username.valid">Usuario Incorrecto</span>
+       
+
         </div>
 
+
         <div class="wrap-input100 validate-input" data-validate="Enter password">
-          <input class="input100" type="password" name="pass" placeholder="Contraseña">
+          <input class="input100" type="password" name="password" #password="ngModel" [(ngModel)]="Login.password" required placeholder="Contraseña" >
           <span class="focus-input100" data-placeholder="&#xf190;"></span>
+          <span *ngIf="password.touched && !password.valid">Contraseña Incorrecta</span>
         </div>
 
         <div class="contact100-form-checkbox">
@@ -28,7 +36,7 @@
         </div>
 
         <div class="container-login100-form-btn">
-          <button class="login100-form-btn">
+          <button class="login100-form-btn" type="submit" (click)="logIn(username.value, password.value, $event)">
             Iniciar Sesion
           </button>
         </div>
@@ -38,6 +46,6 @@
     </div>
   </div>
 </div>
-
+<div *ngIf="usserLogged" ></div>
 
 <div id="dropDownSelect1"></div>

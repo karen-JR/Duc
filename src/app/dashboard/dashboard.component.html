@@ -1,0 +1,106 @@
+<body>
+
+
+<div class="sidenav" id="menu_gral">
+  
+  <img src="assets/img/loginDUC.png" style="
+   
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  position: relative; 
+  top: 10px;
+  box-shadow: 5px 5px 5px;
+  border-radius: 60px;
+    
+  "> 
+<br>
+
+
+
+<ul id="myBtnContainer">
+<li class="btn active" >Inicio</li>
+  <li>
+ <a  class="btn"    (click)="filterSelection('mantenimiento')">
+<img style="width: 30px; " src="https://img.icons8.com/ios/64/000000/administrative-tools.png">
+Mantenimiento</a>
+ </li>
+ <li>
+
+
+  <a class="btn" (click)="filterSelection('multimedia')"><img style="width: 30px;"  src="https://img.icons8.com/ios/50/000000/start--v1.png">
+Multimedia</a> </li>
+
+
+ <li> <a class="btn" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" (click)="filterSelection('tareas')">
+  <img  style="width: 28px;"src="https://img.icons8.com/ios/50/000000/bulleted-list.png">Tareas</a>
+      <ul class="collapse" id="submenu1" role="menu" >
+        <li><a href="#">Link 2.1</a></li>
+        <li><a href="#">Link 2.2</a></li>
+        <li><a href="#">Link 2.3</a></li>
+      </ul>
+ </li>
+ <li> <a class="btn" (click)="filterSelection('formulario')"><img  style="width: 28px;"src="https://img.icons8.com/ios/50/000000/google-forms.png">Formulario</a></li>
+
+
+
+</ul>
+</div>
+
+<!-- Page content -->
+<div class="main">
+  
+
+<div class="container">
+  
+<div class="filterDiv mantenimiento">
+  <h3>hola</h3>
+  
+</div>
+
+<div class="filterDiv multimedia"><h3>holaa</h3></div>
+
+<div class="filterDiv tareas">
+  <h3>holaaa</h3>
+</div>
+<div class="filterDiv formulario">
+  <h3>holaaa</h3>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+

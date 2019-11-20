@@ -1,4 +1,6 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import * as myjQuery from 'jquery';
+declare var $: any ;
 import { Router, ActivatedRoute, Params} from '@angular/router';
 
 @Component({
@@ -6,7 +8,7 @@ import { Router, ActivatedRoute, Params} from '@angular/router';
 	templateUrl: './home.component.html'
 })
 
-export class homeComponent{
+export class homeComponent implements OnInit{
 	public titulo = 'home';
 	public parametro;
 	 public route;
@@ -24,12 +26,17 @@ export class homeComponent{
 		this._route.params.forEach((params: Params)=>{
 			this.parametro = params['page'];
 		});
+
+		$('.carousel').carousel({interval: 2000});
 	}
 		redirigirDos(){
 		this._router.navigate(['/login'])
-	}
+	
+}
 			
 
 		
 
 	}
+
+	

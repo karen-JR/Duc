@@ -17,7 +17,7 @@ margin: 0 auto;
 
 
 $('.carousel').carousel({
-  interval: 1000
+  interval: 500
 })
 
  
@@ -232,4 +232,9 @@ img{ max-width:100%;}
 .subir:hover{
     color:#fff;
     background: #75B3D7;
+}
+
+.carousel-item img {
+  width: 200px;
+  height: 500px;
 }

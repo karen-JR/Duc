@@ -1,38 +1,58 @@
-import {Component} from '@angular/core';
-
-
+import {Component, OnInit} from '@angular/core';
+import * as myjQuery from 'jquery';
+declare var $: any ;
 @Component({
 	selector: 'multimedia',
-	templateUrl: './multimedia.component.html'
+	templateUrl: './multimedia.component.html',
+	styleUrls: ['./mult.css']
 })
 
-export class multimediaComponent{
+export class multimediaComponent implements OnInit {
 	public titulo = 'multimedia';
-	
 
 	
-		
 
-	}
-	function click_texto() {
-	this.classList.toggle('animated  flipOutX');
-	}    
 
-	// MDB Lightbox Init
 
-function previewFile() {
-  let preview =  document.querySelector('img');
-  let file    =  (<HTMLInputElement>document.getElementById('uploadBR')).files[0];
-  var reader  =  new FileReader();
 
-  reader.onloadend = function () {
-    
-   preview.src = <string>reader.result;
-  }
 
-  if (file) {
-    reader.readAsDataURL(file);
-  } else {
-    preview.src = "";
-  }
+
+
+constructor(){}
+  ngOnInit() {
+
+
+
+
+
+
+$(function() {
+var selectedClass = "";
+$(".filter").click(function(){
+selectedClass = $(this).attr("data-rel");
+$("#gallery").fadeTo(100, 0.1);
+$("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+setTimeout(function() {
+$("."+selectedClass).fadeIn().addClass('animation');
+$("#gallery").fadeTo(300, 1);
+}, 300);
+});
+});
+
+
+
+
+
 }
+
+}
+
+
+
+
+  
+
+
+	
+
+

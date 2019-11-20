@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import  { DataApiService } from '../services/data-api.service';
 
 
 @Component({
@@ -7,6 +8,20 @@ import {Component} from '@angular/core';
 	styleUrls: ['./pin.css']
 })
 
-export class pinComponent{
+export class pinComponent implements OnInit{
 	public titulo = 'pin';
+
+	constructor(private dataApi: DataApiService) {
+  }
+
+
+ngOnInit(){
+this.getListUsers();
 }
+
+getListUsers(){
+	this.dataApi.getAllUsers().subscribe(db => console.log(db));
+}
+
+}
+

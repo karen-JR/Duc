@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 
 @Component({
@@ -7,11 +7,4 @@ import {Component} from '@angular/core';
 	styleUrls: ['./registro.css']
 })
 
-export class registroComponent{
-	public titulo = 'registro';
-	
-
-	
-		
-
-	}
+export class registroComponent{ }
