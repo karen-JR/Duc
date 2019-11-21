@@ -44,11 +44,7 @@ constructor(private loginService: LoginService, private router: Router, private 
 
    ngOnInit() {
     
-    this.loginService.login('karen', '1').subscribe(
-      res => {
-        console.log(res);   
-
-  });
+    
 
   }
 
@@ -57,21 +53,7 @@ constructor(private loginService: LoginService, private router: Router, private 
 logIn(username: string, password: string, event: Event) {
     event.preventDefault(); // Avoid default action for the submit button of the login form
 
-    // Calls service to login user to the api rest
-    this.loginService.login(username, password).subscribe(
-
-      res => {
-       console.log(res);
-
-      },
-      error => {
-        console.error(error);
-        
-      },
-
-      () => this.navigate()
-    );
-
+  this.router.navigateByUrl('/profile');
   }
 
   navigate() {

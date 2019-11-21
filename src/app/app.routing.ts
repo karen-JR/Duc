@@ -10,6 +10,7 @@ import { multimediaComponent } from './multimedia/multimedia.component';
 import { pinComponent } from './pin/pin.component';
 import { TareasComponent }    from './Tareas/tareas.component';
 import { dashboardComponent }    from './dashboard/dashboard.component';
+import { ProfileComponent } from './profile/profile.component'
 
 
 
@@ -22,6 +23,7 @@ const appRoutes: Routes = [
 {path: 'multimedia',component: multimediaComponent},
 {path: 'tareas',component: TareasComponent},
 {path: 'dashboard',component: dashboardComponent},
+{path: 'profile',component: ProfileComponent},
 
 
 {path: 'pin',component: pinComponent},

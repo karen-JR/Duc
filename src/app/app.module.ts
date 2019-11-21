@@ -36,6 +36,7 @@ import { MultService } from './multimediaD/mult.service';
  import  { UsuarioService } from './services/usuario.service';
 import { MultimediaDModule } from './multimediaD/multimedia-d.module';
  import  { MessageService } from './message.service';
+import { ProfileComponent } from './profile/profile.component';
 
 
 
@@ -57,6 +58,7 @@ import { MultimediaDModule } from './multimediaD/multimedia-d.module';
     NavbarComponent, 
      TareasComponent,
      dashboardComponent,
+     ProfileComponent,
 
     
      
