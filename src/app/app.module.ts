@@ -37,6 +37,7 @@ import { MultService } from './multimediaD/mult.service';
 import { MultimediaDModule } from './multimediaD/multimedia-d.module';
  import  { MessageService } from './message.service';
 import { ProfileComponent } from './profile/profile.component';
+import { NbComponent } from './nb/nb.component';
 
 
 
@@ -59,6 +60,7 @@ import { ProfileComponent } from './profile/profile.component';
      TareasComponent,
      dashboardComponent,
      ProfileComponent,
+     NbComponent,
 
     
      

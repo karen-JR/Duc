@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import * as myjQuery from 'jquery';
+declare var $: any ;
 
 @Component({
   selector: 'app-profile',
@@ -10,6 +12,11 @@ export class ProfileComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+
+ 
   }
+
+
 
 }

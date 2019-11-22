@@ -6,147 +6,16 @@
 	
 	<!-- Stylesheets -->
 	
-	
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
-body {
-    font-family: 'Open Sans', sans-serif;
-}
-.modal-fullscreen-menu {
-    background-color: #2a2c36;
-  .logo {
-        transition: all 0.25s ease;
-    padding-left: 2.7rem;
-    padding-bottom: 1rem;
-  }
-  .menu-footer {
-    display: inline-flex;
-    float: right;
-  }
-    .glyphicon-chevron-right {
-        visibility: hidden;
-        font-size: 10px;
-        vertical-align: 2.5px;
-        padding-right: 0.3rem
-    }
-  hr {
-    border: 0;
-    border-top: 1px solid #666;
-    margin: 0.7rem;
-  }
-    .close {
-        color: white;
-        opacity: 1;
-        padding: 3.5rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        font-size: 5vh;
-    }
-    .modal-dialog {
-        margin: 0 auto;
-        max-width: 298px;
-        display: flex;
-        height: 100%;
-        align-items: center;
-    }
-    .modal-content {
-        background-color: transparent;
-        box-shadow: none;
-        border: none;
-    }
-    .list-group {
-        text-align: left;
-        margin: 0 auto;
-        width: 100%;
-        a {
-            margin: 0.2rem;
-            text-transform: uppercase;
-            font-size: 14px;
-            color: #d1d4d7;
-            font-weight: 700;
-            letter-spacing: 0em;
-            border-radius: 20px;
-            border-color: transparent;
-            transition: all 0.25s ease;
-            background-color: transparent;
-            padding: 0.7rem;
-            height: 3rem;
-            line-height: 0;
-            &:hover {
-              color: white;
-                border-radius: 20px;
-                background-color: #141519;
-                .glyphicon-chevron-right {
-                    visibility: visible;
-                }
-                
-                
-                &:before {
-                    transform: translate3d(0, 0, 0);
-                    opacity: 1;
-                }
-            }
-        }
-    }
-}
-
-.modal-backdrop {
-    &.in {
-        opacity: 1;
-    }
-}
-
-    </style>
-
+    
 	
 
 	
 
         
         
-        
-        <!-- Full Menu -->
-        <div class="modal fade modal-fullscreen-menu" id="modalNavigation" role="dialog" tabindex="-1">
-            <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                <span class="sr-only">Close</span>
-                <span class="glyphicon glyphicon-remove"></span>
-            </button>
-            <div class="modal-dialog">
-              
-                <nav class="list-group">
-                  <img class="logo" src="http://placehold.it/80x80" alt="logo">
-                    <a class="list-group-item" href="#"><span class="glyphicon glyphicon-chevron-right
-                        "></span> Despachos Aduaneros</a>
-                    <a class="list-group-item" href="#"><span class="glyphicon glyphicon-chevron-right
-                        "></span> Clientes</a>
-                    <a class="list-group-item" href="#"><span class="glyphicon glyphicon-chevron-right
-                        "></span> Proveedores</a>
-                    <a class="list-group-item" href="#"><span class="glyphicon glyphicon-chevron-right
-                        "></span> Status del Despacho</a>
-                    <a class="list-group-item" href="#"><span class="glyphicon glyphicon-chevron-right
-                        "></span> Aduanas</a>
-                    <a class="list-group-item" href="#"><span class="glyphicon glyphicon-chevron-right
-                        "></span> Conceptos de Facturacion</a>
-                        <a class="list-group-item" href="#"><span class="glyphicon glyphicon-chevron-right
-                            "></span> Reportes</a>
-                            <hr>
-                  <a style="color: #999;" class="list-group-item" href="#"><span class="glyphicon glyphicon-chevron-right
-                            "></span> Gestion de Usuarios</a>
-                    <hr>
-                    <div class="menu-footer"><a class="list-group-item" href="#"><span class="glyphicon glyphicon glyphicon-user"></span></a>
-                    <a class="list-group-item" href="#"><span class="glyphicon glyphicon glyphicon-log-out"></span></a></div>
-                </nav>
-            </div>
-        </div>
-        <div class="jumbotron text-center">
-            <div class="container">
-                <button style="background-color: #2a2c36;" class="btn btn-primary btn-lg" data-target="#modalNavigation" data-toggle="modal" type="button">
-                    <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
-                </button>
-            </div>
-        </div>
+
+    <app-nb></app-nb>
+      
         <div class="cd-transition-layer visible opening"> 
             <div class="bg-layer"></div>
         </div><!-- Ink Transition -->
@@ -158,7 +27,7 @@ body {
                         <div class="intro">
                             <div class="profile-img"><img src="./images/profile-1-250x250.jpg" alt=""></div>
                             <h2><b>Elian Martinez</b></h2>
-                            <h4 class="font-yellow">Universitario</h4>
+                            <h4 class="font-yellow" style="color:rgb(27, 158, 235);" >Pasante</h4>
                             <ul class="information margin-tb-30">
                                 <li><b>Fecha de Nac : </b>09 de Agosto 2001</li>
                                 <li><b>Email : </b>ElianMartinez157@gmail.com</li>
@@ -263,10 +132,14 @@ body {
     </div>
     
 	
-	<!-- SCIPTS -->
-	
 	<script src="./common-js/jquery-3.2.1.min.js"></script>
-	
+
+    <!-- SCIPTS -->
+    <script>
+    
+    </script>
+
+		
 	<script src="./common-js/tether.min.js"></script>
 	
 	<script src="./common-js/bootstrap.js"></script>
