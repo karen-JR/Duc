@@ -12,6 +12,7 @@ import { TareasComponent }    from './Tareas/tareas.component';
 import { dashboardComponent }    from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component'
 
+import { FormComponent } from './form/form.component';
 
 
 
@@ -24,7 +25,7 @@ const appRoutes: Routes = [
 {path: 'tareas',component: TareasComponent},
 {path: 'dashboard',component: dashboardComponent},
 {path: 'profile',component: ProfileComponent},
-
+{path: 'form/:number',component: FormComponent},
 
 {path: 'pin',component: pinComponent},
 

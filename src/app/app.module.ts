@@ -24,8 +24,9 @@ import { NavbarComponent }    from './navbar/navbar.component';
 import { TareasComponent }    from './Tareas/tareas.component';
 import { dashboardComponent }    from './dashboard/dashboard.component';
 
-
-
+import { FormDataService }    from './data/formData.service';
+import { NacionalidadesService } from './data/nacionalidades.service';
+import { FormComponent } from './form/form.component';
 
 
 
@@ -61,10 +62,10 @@ import { NbComponent } from './nb/nb.component';
      dashboardComponent,
      ProfileComponent,
      NbComponent,
+     FormComponent
 
     
-     
-     
+  
    
     
     
@@ -76,9 +77,10 @@ import { NbComponent } from './nb/nb.component';
     HttpClientModule,
     MultimediaDModule,
      BrowserAnimationsModule,
+
    
   ],
-  providers: [appRoutingProviders, LoginService,UserService, DataApiService, MultService, MessageService],
+  providers: [ { provide: FormDataService, useClass: FormDataService}, NacionalidadesService, appRoutingProviders, LoginService,UserService, DataApiService, MultService, MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,16 +1,24 @@
 <!-- Just an image -->
 <nav class="navbar navbar-dark bg-dark">
-<img src="assets/img/tarea.png"><h3>
+<img src="assets/img/tarea.png" style="
+display: block;
+margin-left: 190px;
+width: 50px;
+top: 5px;
+" ><h3  style="color: white;
+  margin-right: 980px;">
   Tareas
 </h3>
 </nav>
+
+<app-nb></app-nb>
 
 <div class="container">
 
 <div class="table-responsive">
 
   <!--Table-->
-  <table class="table table-borderless">
+  <table class="table table-hover table-borderles">
 
     <!--Table head-->
     <thead>
@@ -25,40 +33,33 @@
 
     <!--Table body-->
     <tbody>
-      <tr>
+      <tr style="background-color:lightgreen;">
         <th scope="row">1</th>
-        <td > <details>
-          <summary>Esta tarea</summary>
+        <td> <details>
+          <summary>Fotos</summary>
   
-  <p>Fragmento de un escrito con unidad temática, que queda diferenciado del resto de fragmentos por un punto y aparte y generalmente también por llevar letra mayúscula inicial y un espacio en blanco en el margen izquierdo de alineación del texto principal de la primera línea.</p>
+  <p>En esta tarea debera realizarse fotos en los monumentos de su ciudad, municipio o sector.  </p>
 </details>
 
 
 
         </td>
-        <td>Lorem ipsum dolor</td>
+        <td>27 de septiembre 2019</td>
         
       </tr>
-      <tr>
+      <tr style="background-color: lightsalmon;">
         <th scope="row">2</th>
         <td><details>
-          <summary>Esta tarea</summary>
+          <summary>Formulario</summary>
   
-  <p>Fragmento de un escrito con unidad temática, que queda diferenciado del resto de fragmentos por un punto y aparte y generalmente también por llevar letra mayúscula inicial y un espacio en blanco en el margen izquierdo de alineación del texto principal de la primera línea.</p>
+  <p> 
+    En esta tarea debe completar el formulario de inserción laboral <a href="#" [routerLink]="'/form/1'">Ir a Formulario</a>
+  </p>
 </details></td>
-        <td>Lorem ipsum dolor</td>
+        <td>30 de octubre 2019</td>
         
       </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td><details>
-          <summary>Esta tarea</summary>
-  
-  <p>Fragmento de un escrito con unidad temática, que queda diferenciado del resto de fragmentos por un punto y aparte y generalmente también por llevar letra mayúscula inicial y un espacio en blanco en el margen izquierdo de alineación del texto principal de la primera línea.</p>
-</details></td>
-        <td>Lorem ipsum dolor</td>
       
-      </tr>
     </tbody>
     <!--Table body-->
 
